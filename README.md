@@ -1,2 +1,2 @@
 # CompetitionManager
- 
+## Author - Zvezdin Roman
