@@ -1,0 +1,63 @@
+﻿<Window x:Class="CompetitionManager.ViewWpf.Windows.Users.UserInfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+  Title="Информация об участнике" Height="450" Width="800" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="79"/>
+            <RowDefinition Height="320"/>
+            <RowDefinition Height="35.04"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" Margin="10,10,10,3">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="ФИО:" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="FullNameTextBox" Text="" Width="276" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center" Height="20" FontWeight="Bold" IsReadOnly="True"/>
+                <Label Content="Логин CodeForces:" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="CodeForcesLoginTextBox" Text="" Width="128" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center" Height="20" FontWeight="Bold" IsReadOnly="True"/>
+                <Label Content="№ зач. книги" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="UserGradebookTextBox" Text="" Width="140" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center" Height="20" FontWeight="Bold" IsReadOnly="True"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                <Label Content="Учебное заведение:" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="UniversityTextBox" Text="" Width="317" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center" Height="20" FontWeight="Bold" IsReadOnly="True"/>
+                <Label Content="Сумма баллов :" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="UserPointsSum" Text="" Width="128" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center" Height="20" FontWeight="Bold" IsReadOnly="True"/>
+                <Label Content="Студент ВолгГТУ:" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="FromVstuCheckBox" VerticalContentAlignment="Center" IsEnabled="False"></CheckBox>
+
+            </StackPanel>
+            <Separator Height="6" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"/>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="59*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <DataGrid x:Name="UserTeamMembershipsDatagrid" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" Grid.Row="1" Margin="10,0,5,0" IsReadOnly="True" HorizontalAlignment="Right" MaxWidth="385" MaxHeight="295">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding TeamId}" Header="Id" Width="auto"/>
+                    <DataGridTextColumn Binding="{Binding Name}" Header="Команда" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Label Content="Членство в командах" Margin="135,0,135,0" VerticalAlignment="Center" Height="25"/>
+            <Label Content="Тимлид команд" Margin="152,0,152,0" VerticalAlignment="Center" Height="25" Grid.Column="1"/>
+            <DataGrid x:Name="UserLeadedTeamsDataGrid" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" Grid.Row="1" Grid.Column="1" Margin="5,0,10,0" IsReadOnly="True" HorizontalAlignment="Left" MaxWidth="385" MaxHeight="295">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding TeamId}" Header="Id" Width="auto"/>
+                    <DataGridTextColumn Binding="{Binding Name}" Header="Команда" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Height="20" Width="100">
+            <Button x:Name="OkUserInfoButton" Content="OK" Width="100" Height="20" Click="OkUserInfoButton_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

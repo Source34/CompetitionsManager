@@ -1,0 +1,196 @@
+﻿<Window x:Class="CompetitionManager.ViewWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CompetitionManager.ViewWpf"
+        mc:Ignorable="d"
+        Title="ВолгГТУ. Менеджер соревнований" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}">
+        <TabControl TabStripPlacement="Top">
+            <TabItem Header="Соревнования" Width="100" Height="22">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="28"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="110"/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid x:Name="CompetitionDataGrid" Grid.Row="1" IsReadOnly="True" Margin="5,0,5,5" AutoGenerateColumns="False">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding CompetitionName}" Header="Название" Width="*"/>
+                            <DataGridTextColumn Binding="{Binding Description}" Header="Описание" Width="*"/>
+                            <DataGridTextColumn Binding="{Binding StartDate, StringFormat=\{0:dd.MM.yy HH:mm:ss\}}" Header="Дата проведения" Width="*"/>
+                            <DataGridTextColumn Binding="{Binding EndDate, StringFormat=\{0:dd.MM.yy HH:mm:ss\}}" Header="Дата проведения" Width="*"/>
+                            <DataGridTextColumn Binding="{Binding TasksCount}" Header="Кол-во задач" Width="*"/>
+                            <DataGridTextColumn Binding="{Binding TeamsCount}" Header="Кол-во команд" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Label Content="Соревнования" FontWeight="Bold" Margin="5,0,5,0" HorizontalContentAlignment="Center"/>
+                    <StackPanel Grid.Column="1" Grid.Row="1" Margin="0,0,5,0">
+                        <Button x:Name="ShowCompetitionInfo" Content="Просмотр" Padding="1,0,1,1" Height="20" Width="100" Margin="0,0,0,5" Click="ShowCompetitionInfo_Click"/>
+                        <Button x:Name="EditResultsButton" Width="100" Height="20" IsCancel="True" Content="Результаты" Click="EditResultsButton_Click" Margin="0,0,0,5"/>
+                        <Button x:Name="CreateCompetitionButton" Content="Создать" Margin="0,0,0,0" Padding="1,0,1,1" Click="CreateCompetitionButton_Click" Width="100" Height="20"/>
+                        <Button x:Name="EditCompetitiomButton" Content="Редактировать" Padding="1,0,1,1" Margin="0,5,0,0" Width="100" Height="20" Click="EditCompetitiomButton_Click"/>
+                        <Button x:Name="DeleteCompetitionButton" Content="Удалить" Padding="1,0,1,1" Margin="0,5,0,5" Width="100" Height="20" Click="DeleteCompetitionButton_Click"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Редактор" Margin="-2,0,-2,0" Width="100">
+                <Grid Background="#FFE5E5E5">
+                    <TabControl TabStripPlacement="Left" Margin="-3,-3,-3,0">
+                        <TabItem Header="Участники">
+                            <Grid Background="#FFE5E5E5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="110"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="28"/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <DataGrid x:Name="UsersDataGrid"  Grid.Row="1" Margin="5,0,5,5" AutoGenerateColumns="False" ColumnWidth="*" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Binding="{Binding UserId}" Header="Id" Width="auto"/>
+                                        <DataGridTextColumn Binding="{Binding FullName}" Header="ФИО" Width="auto"/>
+                                        <DataGridTextColumn Binding="{Binding GradebookNumber}" Header="Номер зач. книги"/>
+                                        <DataGridTextColumn Binding="{Binding CodeforcesLogin}" Header="Логин Codeforces"/>
+                                        <DataGridTextColumn Binding="{Binding University}" Header="Учебное заведение"/>
+                                        <DataGridCheckBoxColumn Binding="{Binding FromVstu}" Header="Из ВолгГТУ"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                                <StackPanel Grid.Column="1" Grid.Row="1" Margin="0,0,5,0">
+                                    <Button x:Name="ShowUserInfoButton" Content="Просмотр" Width="100" Height="20" Margin="0,0,0,0" Click="ShowUserInfoButton_Click"/>
+                                    <Button x:Name="CreateNewUserButton" Content="Создать" Width="100" Height="20" Margin="0,5,0,0" Click="CreateNewUserButton_Click"/>
+                                    <Button x:Name="EditUserButton" Content="Редактировать" Width="100" Margin="0,5,0,0" Click="EditUserButton_Click"/>
+                                    <Button x:Name="DeleteUserButton" Content="Удалить" Width="100" Margin="0,5,0,0" Click="DeleteUserButton_Click"/>
+                                </StackPanel>
+                                <Label Content="Список участников" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" RenderTransformOrigin="-0.29,0.427" FontWeight="Bold"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Тренеры">
+                            <Grid Background="#FFE5E5E5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="110"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="28"/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <DataGrid x:Name="CoachesDataGrid" Grid.Row="1" Margin="5,0,5,5" ColumnWidth="*" AutoGenerateColumns="False" CanUserDeleteRows="False" CanUserAddRows="False" IsReadOnly="True" >
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Binding="{Binding CoachId}" Header="Id" Width="auto"/>
+                                        <DataGridTextColumn Binding="{Binding FullName}" Header="ФИО"/>
+                                        <DataGridTextColumn Binding="{Binding CodeforcesLogin}" Header="Логин Codeforces"/>
+                                        <DataGridTextColumn Binding="{Binding University}" Header="Учебное заведение"/>
+                                        <DataGridTextColumn Binding="{Binding AcademicDegree}" Header="Академ. степень"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                                <StackPanel Grid.Column="1" Grid.Row="1" Margin="0,0,5,0">
+                                    <Button x:Name="ShowCoachInfoButton" Content="Просмотр" Width="100" Height="20" Margin="0,0,0,0" Click="ShowCoachInfoButton_Click"/>
+                                    <Button x:Name="CreateNewCoachButton" Content="Создать" Width="100" Height="20" Margin="0,5,0,0" Click="CreateNewCoachButton_Click"/>
+                                    <Button x:Name="EditCoachButton" Content="Редактировать" Width="100" Margin="0,5,0,0" Click="EditCoachButton_Click"/>
+                                    <Button x:Name="DeleteCoachButton" Content="Удалить" Width="100" Height="20" Margin="0,5,0,0" Click="DeleteCoachButton_Click"/>
+                                </StackPanel>
+                                <Label Content="Список тренеров" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" RenderTransformOrigin="-0.29,0.427" FontWeight="Bold"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Задания">
+                            <Grid Background="#FFE5E5E5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="110"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="28"/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <DataGrid x:Name="TasksDataGrid" Grid.Row="1" Margin="5,0,5,5" AutoGenerateColumns="False" ColumnWidth="*" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True" SelectionUnit="FullRow">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Binding="{Binding TaskId}" Header="Id" Width="auto"/>
+                                        <DataGridTextColumn Binding="{Binding Name}" Header="Название"/>
+                                        <DataGridTextColumn Binding="{Binding Text}" Header="Задание">
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style>
+                                                    <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </DataGridTextColumn>
+                                        <DataGridTextColumn Binding="{Binding Solution}" Header="Решение">
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style>
+                                                    <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </DataGridTextColumn>
+                                        <DataGridTextColumn Binding="{Binding InputExample}" Header="Входные данные">
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style>
+                                                    <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </DataGridTextColumn>
+                                        <DataGridTextColumn Binding="{Binding OutputExample}" Header="Выходные данные">
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style>
+                                                    <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </DataGridTextColumn>
+                                        <DataGridTextColumn Binding="{Binding Points}" Header="Сложность" Width="auto">
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style>
+                                                    <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </DataGridTextColumn>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                                <StackPanel Grid.Column="1" Grid.Row="1" Margin="0,0,5,0">
+                                    <Button x:Name="ShowTaskInfoButton" Content="Просмотр" Width="100" Height="20" Margin="0,0,0,0" Click="ShowTaskInfoButton_Click"/>
+                                    <Button x:Name="CreateTaskButton" Content="Создать" Width="100" Height="20" Margin="0,5,0,0" Click="CreateTaskButton_Click"/>
+                                    <Button x:Name="EditTaskButton" Content="Редактировать" Width="100" Height="20" Margin="0,5,0,0" Click="EditTaskButton_Click"/>
+                                    <Button x:Name="DeleteTaskButton" Content="Удалить" Width="100" Height="20" Margin="0,5,0,0" Click="DeleteTaskButton_Click"/>
+                                </StackPanel>
+                                <Label Content="Банк заданий" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" RenderTransformOrigin="-0.29,0.427" FontWeight="Bold"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Команды">
+                            <Grid Background="#FFE5E5E5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="110"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="28"/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <DataGrid x:Name="TeamsDataGrid"  Grid.Row="1" Margin="5,0,5,5" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True" AutoGenerateColumns="False">
+                                    <DataGrid.Columns >
+                                        <DataGridTextColumn Binding="{Binding TeamId}" Header="Id" Width="auto"/>
+                                        <DataGridTextColumn Binding="{Binding Name}" Header="Название" Width="*"/>
+                                        <DataGridTextColumn Binding="{Binding CoachName}" Header="Тренер" Width="*"/>
+                                        <DataGridTextColumn Binding="{Binding TeamleadName}" Header="Тимлид" Width="*"/>
+                                        <DataGridTextColumn Binding="{Binding TeammatesCount}" Header="Состав (чел)" Width="*"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                                <StackPanel Grid.Column="1" Grid.Row="1" Margin="0,0,5,0">
+                                    <Button x:Name="ShowTeamInfoButton" Content="Просмотр" Width="100" Height="20" Margin="0,0,0,0" Click="ShowTeamInfoButton_Click"/>
+                                    <Button x:Name="CreateNewTeamButton" Content="Создать" Width="100" Height="20" Margin="0,5,0,0" Click="CreateNewTeamButton_Click"/>
+                                    <Button x:Name="EditTeamButton" Content="Редактировать" Width="100" Height="20" Margin="0,5,0,0" Click="EditTeamButton_Click"/>
+                                    <Button x:Name="DeleteTeamButton" Content="Удалить" Width="100" Height="20" Margin="0,5,0,0" Click="DeleteTeamButton_Click"/>
+                                </StackPanel>
+                                <Label Content="Список команд" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" RenderTransformOrigin="-0.29,0.427" FontWeight="Bold"/>
+                            </Grid>
+                        </TabItem>
+
+                    </TabControl>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

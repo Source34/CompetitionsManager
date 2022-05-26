@@ -1,0 +1,45 @@
+﻿<Window x:Class="CompetitionManager.ViewWpf.Windows.Users.CreateEditUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+  Title="Создать участника" WindowStartupLocation="CenterScreen" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SizeToContent="WidthAndHeight" ResizeMode="NoResize" Height="247" Width="437">
+    <Grid Background="#FFE5E5E5">
+        <StackPanel Margin="5,10,5,10">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                <Label Width="120" Content="Фамилия:" HorizontalContentAlignment="Right"/>
+                <TextBox x:Name="SurnameTextBox" Height="20" Width="300" VerticalContentAlignment="Center" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                <Label Width="120" Content="Имя:" HorizontalContentAlignment="Right"/>
+                <TextBox x:Name="FirstNameTextBox" Height="20" Width="300" VerticalContentAlignment="Center" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                <Label Width="120" Content="Отчество:" HorizontalContentAlignment="Right"/>
+                <TextBox x:Name="PatronymicTextBox" Height="20" Width="300" VerticalContentAlignment="Center" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                <Label Width="120" Content="Логин CodeForces:" HorizontalContentAlignment="Right"/>
+                <TextBox x:Name="CodeForcesLoginTextBox" Width="300" Height="20" VerticalContentAlignment="Center" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                <Label Width="120" Content="Номер зач. книги:" HorizontalContentAlignment="Right"/>
+                <TextBox x:Name="GradebookNumberTextBox" Width="300" Height="20" VerticalContentAlignment="Center" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                <Label Width="120" Content="Учебное заведение:" HorizontalContentAlignment="Right"/>
+                <TextBox x:Name="UniversityTextBox" Width="300" Height="20" VerticalContentAlignment="Center" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Width="427" Margin="0,0,0,5">
+                <Label Width="119" Content="Из ВолгГТУ:" HorizontalContentAlignment="Right" Margin="0,0,0,0" Padding="5,5,4,5"/>
+                <CheckBox x:Name="FromVstuCheckBox" VerticalAlignment="Center" Padding="0,0,0,0" Checked="FromVstuCheckBox_Checked" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0">
+                <Button x:Name="OkCreateEditButton" Content="OK" Width="100" Height="20" Margin="0,0,5,0" Click="OkCreateEditButton_Click"/>
+                <Button x:Name="CancelButton" Content="Отмена" Width="100" Height="20" Margin="5,0,0,0" Click="CancelButton_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+
+</Window>

@@ -1,0 +1,31 @@
+﻿<Window x:Class="CompetitionManager.ViewWpf.Windows.Tasks.ShowTaskInfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Информация о задаче" Height="489" Width="624" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFE5E5E5">
+        <StackPanel Width="624">
+            <StackPanel Margin="10,10,10,10" Height="454">
+                <Label x:Name="Info" Content="Название"/>
+                <TextBox x:Name="TaskInfoTaskNameTextBox" IsReadOnly="True"/>
+                <Label Content="Задание"/>
+                <TextBox x:Name="TaskInfoTaskTextTextBox" Height="84" IsReadOnly="True"/>
+                <Label Content="Решение"/>
+                <TextBox x:Name="TaskInfoSolutionTextBox" Height="84" IsReadOnly="True"></TextBox>
+                <Label Content="Пример входных"/>
+                <TextBox x:Name="TaskInfoInputExampleTextBox" Height="40" IsReadOnly="True"></TextBox>
+                <Label Content="Пример выходных"/>
+                <TextBox x:Name="TaskInfoOutputExampleTextBox" Height="40" IsReadOnly="True"></TextBox>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Сложность:"/>
+                    <Slider x:Name="TaskInfoDifficultSlider" Width="202" AutoToolTipPlacement="TopLeft" TickPlacement="BottomRight" Height="18" VerticalAlignment="Stretch" Minimum="1" Value="1" Delay="499" SmallChange="0" TickFrequency="2" IsEnabled="False"/>
+                    <Label Margin="0,0,0,5"  Content="{Binding Value, ElementName=TaskInfoDifficultSlider}"  ContentStringFormat="{}{0:0.00}"></Label>
+                </StackPanel>
+                <Button x:Name="TaskInfoOkButton" Content="OK" Width="100" Height="20" Margin="0,0,0,0" Click="TaskInfoOkButton_Click"/>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>

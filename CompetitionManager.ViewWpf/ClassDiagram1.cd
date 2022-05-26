@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CompetitionManager.ViewWpf.Data.ApiConfig" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\ApiConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Data.DataAccess" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAACAAAAAgA=</HashCode>
+      <FileName>Data\DataAccess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.EntityViews.Coach.CoachView" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAGAAAAgAAKAAAACAAAAABAAAAAIAAAAAgAAgAAA=</HashCode>
+      <FileName>EntityViews\Coach\CoachView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.EntityViews.Competitions.CompetitionView" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAggAIAAAAAAIAAgAAAACAAAAAAAgEAAAAA=</HashCode>
+      <FileName>EntityViews\Competitions\CompetitionView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.EntityViews.TaskResults.TaskResultView" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAgAAAAAAAIAAAAQAAAgAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>EntityViews\TaskResults\TaskResultView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.EntityViews.Teams.TeamCompetitionsResults" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAgAABAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>EntityViews\Teams\TeamCompetitionsResults.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.EntityViews.Teams.TeamResultView" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQCAIAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>EntityViews\Teams\TeamResultView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.EntityViews.Teams.TeamView" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAIAAAAAAAQCAAAAAAAAAAAAgAAAABA=</HashCode>
+      <FileName>EntityViews\Teams\TeamView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.EntityViews.Users.UserTeamMateView" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAGAAAAAAAIAAAACAAAgABAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>EntityViews\Users\UserTeamMateView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.EntityViews.Users.UserView" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABGEAAAAAAIAAAACAAAgABAAEAAIAAAAIgAAAAAA=</HashCode>
+      <FileName>EntityViews\Users\UserView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Validators.Coaches.CreateUpdateCoachDtoValidator" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validators\Coaches\CoachDtoValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Validators.Tasks.CreateUpdateTaskValidator" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validators\Tasks\CreateUpdateTaskValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Validators.Teams.TeamValidator" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validators\Teams\TeamValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Validators.Users.CreateUpdateUserDtoValidator" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validators\Users\UserDtoValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Windows.Coaches.CoachInfoWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows\Coaches\CoachInfoWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Windows.Coaches.CreateEditCoachWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAgAAAAAAAAAAAAAEAAAAEEAAAAAAAAA=</HashCode>
+      <FileName>Windows\Coaches\CreateEditCoachWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Windows.Competitions.CreateEditCompetitionWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAARAIAACAAAAAAAQAAAAAAgAEEAIAAACAAAAAAAA=</HashCode>
+      <FileName>Windows\Competitions\CreateEditCompetitionWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Windows.Competitions.EditTaskResultWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABIAAACgAAAACAAAAAAAAAAAAAAAAAIAAAAAAAAAAEg=</HashCode>
+      <FileName>Windows\Competitions\EditTaskResultWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Windows.Competitions.EditTasksWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAIAAAAAAAAAAAAAAAACAAQAAAAIIAAAAIAAAAAAE=</HashCode>
+      <FileName>Windows\Competitions\EditTasksWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Windows.Competitions.EditTeamsWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAqAAAAAAAAAAAAAAAAAAIQAAAAIIAAAAAQAAAAAA=</HashCode>
+      <FileName>Windows\Competitions\EditTeamsWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Windows.Competitions.EditTeamTaskResultsWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAggCAAAAAAAAAACAAAAAAAABIAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows\Competitions\EditTeamTaskResultsWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Windows.Competitions.SelectTaskResultsWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAIAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows\Competitions\SelectTaskResultsWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Windows.Competitions.ShowCompetitionInfo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAgAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows\Competitions\ShowCompetitionInfo.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Windows.Tasks.CreateEditNewTaskWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQgAAAAAAAAAAAAAAAAAAEIAAAAAAAAA=</HashCode>
+      <FileName>Windows\Tasks\CreateEditNewTaskWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Windows.Tasks.ShowTaskInfoWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows\Tasks\ShowTaskInfoWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Windows.Teams.CreateEditTeamWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAQAAAAAAEAAIAAABBAAEAAAAAAAAAA=</HashCode>
+      <FileName>Windows\Teams\CreateEditTeamWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Windows.Teams.EditTeamMatesWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ARAAIAAAAAAAAAAAAAABAAAAQAAAAIMAAAAAAAAAQAA=</HashCode>
+      <FileName>Windows\Teams\EditTeamMatesWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Windows.Teams.SelectCoachWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAgAAAACAAAA=</HashCode>
+      <FileName>Windows\Teams\SelectCoachWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Windows.Teams.SelectTeamLeadWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAQAAAAQAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows\Teams\SelectTeamLeadWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Windows.Teams.ShowTeamInfoWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows\Teams\ShowTeamInfoWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Windows.Users.CreateEditUserWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAIAAAAIAAAAAAAAAAIAAAAAEAAAIEAAAAAAAAAA=</HashCode>
+      <FileName>Windows\Users\CreateEditUserWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.Windows.Users.UserInfoWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Windows\Users\UserInfoWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.App" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.ViewWpf.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAkRAMRAAQAQEABAAAAAQAQgAAEAAAAgAEAAAAAhE=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CompetitionManager.Core.Domains.Coaches.Services.CoachService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAgCAAAAAAAAAAAgAAAAAAIAAIIA=</HashCode>
+      <FileName>Domains\Coaches\Services\CoachService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CompetitionManager.Core.Domains.Coaches.Coach" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAGAAAAgAACAAAACAAAAABAAAAAIAAAAAAAAgAAA=</HashCode>
+      <FileName>Domains\Coaches\Coach.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.Core.Domains.Competitions.Services.CompetitionService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAgAAAAAAAAAAAAkAgAgAAIAAIIA=</HashCode>
+      <FileName>Domains\Competitions\Services\CompetitionService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CompetitionManager.Core.Domains.Competitions.Competition" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAgAIAAAAAAIAACCAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Domains\Competitions\Competition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.Core.Domains.TaskResults.Services.TaskResultService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAgAAAAAAAAIAAAgAAAAAAIAAIIA=</HashCode>
+      <FileName>Domains\TaskResults\Services\TaskResultService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CompetitionManager.Core.Domains.TaskResults.TaskResult" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAABAAAAQAAACAAAAAEEAAAAAAAAA=</HashCode>
+      <FileName>Domains\TaskResults\TaskResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.Core.Domains.Tasks.Services.TaskService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAgAAAAAAAAAAAAgAAAAAAKQAIIA=</HashCode>
+      <FileName>Domains\Tasks\Services\TaskService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CompetitionManager.Core.Domains.Tasks.Task" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAgQAAAAAAAAQAAAiAAAAAACAACAAAIAA=</HashCode>
+      <FileName>Domains\Tasks\Task.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.Core.Domains.Teams.Services.TeamService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAgAAAABAAAAAAAgAgAgAAIQAIIA=</HashCode>
+      <FileName>Domains\Teams\Services\TeamService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CompetitionManager.Core.Domains.Teams.Team" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAIAAAAAAQCCgCAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domains\Teams\Team.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.Core.Domains.Users.Services.UserService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAgAAAAAAAAAgAAAAAAAAAAAAgBAAAAAJAAIIA=</HashCode>
+      <FileName>Domains\Users\Services\UserService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CompetitionManager.Core.Domains.Users.User" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABGEAAAAAAAAAAACAAAgABAAEAAIAAAAIAAAAAAA=</HashCode>
+      <FileName>Domains\Users\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.Core.Exceptions.ObjectNotFoundException" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\ObjectNotFoundException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompetitionManager.Core.Extensions.ServiceCollectionExtensions" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\ServiceCollectionExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CompetitionManager.Core.Domains.Coaches.Repositories.ICoachRepository" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAIAAIIA=</HashCode>
+      <FileName>Domains\Coaches\Repositories\ICoachRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CompetitionManager.Core.Domains.Coaches.Services.ICoachService" Collapsed="true">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAIAAIIA=</HashCode>
+      <FileName>Domains\Coaches\Services\ICoachService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CompetitionManager.Core.Domains.Competitions.Repositories.ICompetitionRepository" Collapsed="true">
+    <Position X="4" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAIAAIIA=</HashCode>
+      <FileName>Domains\Competitions\Repositories\ICompetitionRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CompetitionManager.Core.Domains.Competitions.Services.ICompetitionService" Collapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAIAAIIA=</HashCode>
+      <FileName>Domains\Competitions\Services\ICompetitionService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CompetitionManager.Core.Domains.TaskResults.Repositories.ITaskResultRepository" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAIAAIIA=</HashCode>
+      <FileName>Domains\TaskResults\Repositories\ITaskResultRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CompetitionManager.Core.Domains.TaskResults.Services.ITaskResultService" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAIAAIIA=</HashCode>
+      <FileName>Domains\TaskResults\Services\ITaskResultService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CompetitionManager.Core.Domains.Tasks.Repositories.ITaskRepository" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAIQAIIA=</HashCode>
+      <FileName>Domains\Tasks\Repositories\ITaskRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CompetitionManager.Core.Domains.Tasks.Services.ITaskService" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAIQAIIA=</HashCode>
+      <FileName>Domains\Tasks\Services\ITaskService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CompetitionManager.Core.Domains.Teams.Repositories.ITeamRepository" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAIQAIIA=</HashCode>
+      <FileName>Domains\Teams\Repositories\ITeamRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CompetitionManager.Core.Domains.Teams.Services.ITeamService" Collapsed="true">
+    <Position X="2.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAABAAAAAAAgAAAAAAIQAIIA=</HashCode>
+      <FileName>Domains\Teams\Services\ITeamService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CompetitionManager.Core.Domains.Users.Repositories.IUserRepository" Collapsed="true">
+    <Position X="5.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAJAAIIA=</HashCode>
+      <FileName>Domains\Users\Repositories\IUserRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CompetitionManager.Core.Domains.Users.Services.IUserService" Collapsed="true">
+    <Position X="0.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAAJAAIIA=</HashCode>
+      <FileName>Domains\Users\Services\IUserService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CompetitionManager.Core.Seriveces.IUnitOfWork" Collapsed="true">
+    <Position X="4" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\IUnitOfWork.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

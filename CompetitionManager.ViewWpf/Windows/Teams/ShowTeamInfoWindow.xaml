@@ -1,0 +1,50 @@
+﻿<Window x:Class="CompetitionManager.ViewWpf.Windows.Teams.ShowTeamInfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+  Title="Просмотр данных команды" Height="529" Width="699" SizeToContent="WidthAndHeight" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFE5E5E5">
+        <StackPanel Margin="10,10,10,5" Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Название команды:" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="TeamInfoTeamNameTextBox" TextWrapping="Wrap" Width="561" Height="20" IsReadOnly="True"/>
+            </StackPanel>
+            <StackPanel Height="28" Orientation="Horizontal">
+                <Label Content="Тимлид:" Width="118" HorizontalContentAlignment="Right"/>
+                <TextBox x:Name="TeamInfoTeamLeadTextBox" TextWrapping="Wrap" Width="561" Height="20" IsReadOnly="True"/>
+            </StackPanel>
+            <StackPanel Height="28" Orientation="Horizontal">
+                <Label Content="Тренер:" Width="118" HorizontalContentAlignment="Right"/>
+                <TextBox x:Name="TeamInfoCoachTextBox" TextWrapping="Wrap" Width="561" Height="20" Margin="0,0,10,0" IsReadOnly="True"/>
+            </StackPanel>
+            <StackPanel Margin="0,0,0,5">
+                <StackPanel Orientation="Horizontal" Height="26" >
+                    <Label Content="Состав команды:"/>
+                </StackPanel>
+                <DataGrid x:Name="TeamInfoMatesDataGrid" Height="161" Margin="0,0,0,0" IsReadOnly="True" AutoGenerateColumns="False" Width="679">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding UserId}" Header="Id" Width="auto"/>
+                        <DataGridTextColumn Binding="{Binding FullName}" Header="ФИО" Width="*"/>
+                        <DataGridTextColumn Binding="{Binding GradebookNumber}" Header="Номер зач. книги"/>
+                        <DataGridTextColumn Binding="{Binding CodeforcesLogin}" Header="Логин Codeforces"/>
+                        <DataGridTextColumn Binding="{Binding University}" Header="Учебное заведение"/>
+                        <DataGridCheckBoxColumn Binding="{Binding FromVstu}" Header="Из ВолгГТУ"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Label>Результаты:</Label>
+                <DataGrid x:Name="TeamInfoResultsDataGrid" Height="169" Margin="0,0,0,0" AutoGenerateColumns="False" Width="679">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding CompetitionName}" Header="Соревнование" Width="*"/>
+                        <DataGridTextColumn Binding="{Binding TeamName}" Header="Команда" Width="*"/>
+                        <DataGridTextColumn Binding="{Binding SumPoints}" Header="Сумма очков" Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,2,0,5" Width="103">
+                <Button x:Name="TeamInfoOkButton" Content="OK" Width="100" Height="20" Margin="0,0,5,0" HorizontalAlignment="Stretch" Click="TeamInfoOkButton_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
